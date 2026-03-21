@@ -1,0 +1,4 @@
+myenv/
+__pycache__/
+*.pkl
+backend/model/hybrid_recommender_backup.pkl
