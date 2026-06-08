@@ -1,10 +1,10 @@
-# 🎬 Hybrid Movie Recommender System
+#  Hybrid Movie Recommender System
 
 A high-performance recommendation engine combining **Content-Based Filtering** and **Collaborative Filtering**. This project features a robust **FastAPI** backend and an interactive **Streamlit** frontend, fully containerized with **Docker**.
 
 ---
 
-## 📊 Dataset & Training
+##  Dataset & Training
 
 The model was trained using [The Movies Dataset](https://www.kaggle.com/code/rounakbanik/movie-recommender-systems/input) from Kaggle. 
 
@@ -14,7 +14,7 @@ Due to file size constraints, the raw data files (`movies_metadata.csv`, `rating
 
 ---
 
-## 🛠️ Local Setup & Installation
+##  Local Setup & Installation
 
 ### 1. Environment Setup
 It is highly recommended to use a virtual environment to avoid dependency conflicts.
@@ -41,7 +41,7 @@ chmod +x start.sh
 
 ---
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 Build and run the entire stack using Docker to ensure environment consistency.
 
@@ -58,7 +58,7 @@ docker run -p 8000:8000 -p 8501:8501 hybrid-recommender
 
 ---
 
-## 📂 Project Architecture
+##  Project Architecture
 
 ```text
 .
@@ -76,14 +76,9 @@ docker run -p 8000:8000 -p 8501:8501 hybrid-recommender
 └── start.sh                        # Shell script to boot services concurrently
 ```
 
-## 📡 Access
-Once the services are running, you can access them at:
-* **Streamlit UI:** [http://localhost:8501](http://localhost:8501)
-* **API Docs (Swagger):** [http://localhost:8000/docs](http://localhost:8000/docs)
-
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 * **Large Files:** The core ML model (`hybrid_recommender.pkl`) is managed via **Git LFS**. Ensure Git LFS is installed before pulling.
 * **Storage:** Large backup files (e.g., `hybrid_recommender_backup.pkl`) are explicitly ignored via `.gitignore` to prevent disk space issues and repository bloat.
